@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*:root{
+    --colorAnaranjado: #ef4c2b;
+}*/
+
+.login li{
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+
+}
+.login a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+body{
+    background-image: url('../img/bg-2.png');
+}
+
+.login {
+    max-width: 1140px;
+    width: 100%;
+    margin-top: 150px;
+}
+
+/*HEADER*/
+
+.login header{
+    background-color: orangered;
+    max-width: 1140px;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden; 
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.login header img{
+    float: left;
+}
+
+.login header ul.lista1{
+    float: left;
+    padding: 10px;
+    display: none;
+}
+
+
+
+.login header ul.lista2{
+    float: right;
+    padding: 10px;
+}
+
+.login header ul.listacelu{
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.login header ul.listacelu a:hover{
+    color: rgb(rgb(83, 20, 1))
+}
+
+.login header li{
+    padding: 10px;
+}
+
+/*main*/
+.login main{
+    float: left;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+/*seccion productos*/
+
+.login main section{
+    max-width: 100%;
+    margin: 10px;
+    float: left;
+    position: relative;
+}
+
+.login main section img.icon{
+    width: 60px;
+    position: absolute;
+    right: 20px;
+}
+
+.login main section img{
+    width: 100%;
+}
+
+.login main section h2{
+    margin: 15px;
+}
+
+.login main section p{
+    margin-bottom: 15px;
+}
+
+.login main section button{
+    background-color: orangered;
+    border: orangered;
+ 
+}
+
+.login main section a{
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+}
+
+
+/*SECCION LATERAL*/
+
+/*TITULO*/
+.login aside{
+    width: 100%;    
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.login aside section h2{
+    text-transform: capitalize;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid skyblue;
+    margin-bottom: 10px;
+
+}
+
+/*Articulos*/
+
+.login aside section{
+    margin-bottom: 30px;
+}
+
+.login aside section article{
+    background-color: white;
+    border: 1px solid skyblue;
+    padding: 10px;
+    position: relative;
+}
+
+.login aside section article img.icon{
+    position: absolute;
+    width: 50px;
+    right: 5px;
+    top: 0px;
+}
+
+.login aside section article a{
+    color: black;
+    text-transform: none;
+    width: 185px;
+    float: right;
+    padding: 20px 10px;
+}
+
+/*Publicidad*/
+
+.login aside section{
+    background-color: white;
+    border: 1px solid skyblue;
+    
+}
+
+.login aside section div#publicidad img{
+    width: 100%;
+    padding: 10px;
+}
+
+/*TABLET*/
+
+@media(min-width: 420px){
+    .login{
+        margin-top: 100px;
+    }
+    .login header ul.lista1{
+        display: inline;
+    }
+    .login header ul.listacelu{
+        display: none;
+    }
+    .login main section{
+        max-width: 46%;
+
+    }
+    .login aside{
+        width: 50%;
+    }
+}
+
+/*ESCRITORIO*/
+
+@media(min-width: 769px){
+    .login main{
+        width: 65%;
+    }
+    .login main section{
+        width: 50%;
+    }
+    .login aside{
+        width: 30%;
+    }
+}

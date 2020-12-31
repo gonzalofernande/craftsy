@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*:root{
+    --colorAnaranjado: #ef4c2b;
+}*/
+
+.home li{
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+
+}
+.home a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+body{
+    background-image: url('../img/bg-2.png');
+}
+
+.home {
+    max-width: 1140px;
+    width: 100%;
+    margin-top: 150px;
+}
+
+/*HEADER*/
+
+.home header{
+    background-color: orangered;
+    max-width: 1140px;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden; 
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.home header img{
+    float: left;
+}
+
+.home header ul.lista1{
+    float: left;
+    padding: 10px;
+    display: none;
+}
+
+
+
+.home header ul.lista2{
+    float: right;
+    padding: 10px;
+}
+
+.home header ul.listacelu{
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.home header ul.listacelu a:hover{
+    color: rgb(rgb(83, 20, 1))
+}
+
+.home header li{
+    padding: 10px;
+}
+
+/*main*/
+.home main{
+    float: left;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+/*seccion productos*/
+
+.home main section{
+    max-width: 100%;
+    margin: 10px;
+    float: left;
+    position: relative;
+}
+
+.home main section img.icon{
+    width: 60px;
+    position: absolute;
+    right: 20px;
+}
+
+.home main section img{
+    width: 100%;
+}
+
+.home main section h2{
+    margin: 15px;
+}
+
+.home main section p{
+    margin-bottom: 15px;
+}
+
+.home main section button{
+    background-color: orangered;
+    border: orangered;
+ 
+}
+
+.home main section a{
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+}
+
+
+/*SECCION LATERAL*/
+
+/*TITULO*/
+.home aside{
+    width: 100%;    
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.home aside section h2{
+    text-transform: capitalize;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid skyblue;
+    margin-bottom: 10px;
+
+}
+
+/*Articulos*/
+
+.home aside section{
+    margin-bottom: 30px;
+}
+
+.home aside section article{
+    background-color: white;
+    border: 1px solid skyblue;
+    padding: 10px;
+    position: relative;
+}
+
+.home aside section article img.icon{
+    position: absolute;
+    width: 50px;
+    right: 5px;
+    top: 0px;
+}
+
+.home aside section article a{
+    color: black;
+    text-transform: none;
+    width: 185px;
+    float: right;
+    padding: 20px 10px;
+}
+
+/*Publicidad*/
+
+.home aside section{
+    background-color: white;
+    border: 1px solid skyblue;
+    
+}
+
+.home aside section div#publicidad img{
+    width: 100%;
+    padding: 10px;
+}
+
+/*TABLET*/
+
+@media(min-width: 420px){
+    .home{
+        margin-top: 100px;
+    }
+    .home header ul.lista1{
+        display: inline;
+    }
+    .home header ul.listacelu{
+        display: none;
+    }
+    .home main section{
+        max-width: 46%;
+
+    }
+    .home aside{
+        width: 50%;
+    }
+}
+
+/*ESCRITORIO*/
+
+@media(min-width: 769px){
+    .home main{
+        width: 65%;
+    }
+    .home main section{
+        width: 50%;
+    }
+    .home aside{
+        width: 30%;
+    }
+}
